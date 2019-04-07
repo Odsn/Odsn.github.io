@@ -4,7 +4,6 @@ title: 신경망
 published: True
 category: S-lab
 permalink: /S-lab/:year/:month/:day/:title/
-comments: true
 ---
 
 ## 신경망

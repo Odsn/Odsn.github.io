@@ -4,12 +4,11 @@ title: 손실함수와 경사하강법
 published: True
 category: S-lab
 permalink: /S-lab/:year/:month/:day/:title/
-comments: true
 ---
 
 ## 손실함수, 경사하강법
 
------------
+------
 
 ### **학습**
 
@@ -25,13 +24,13 @@ comments: true
 
 신경망이 학습할 수 있도록 해주는 지표. 출력값과 사용자가 원하는 출력값의 차이, 즉 오차를 말한다. 이 오차를 지표로 삼아 미분을 통해 매개변수(가중치, 편향)의 기울기를 개산하고, 그 값을 줄이는 방향으로 나아간다.
 
-1. ## 평균 제곱 오차(Mean Squared Error : MSE) ##
+#### 평균 제곱 오차(Mean Squared Error : MSE)
 
-   $$
-   E = 1/2\sum_k(y_k - t_k)^2 \\
-   y_k:신경망이\ 추측한\ 값 \\
-   t_k:정답(0\ or\ 1)
-   $$
+$$
+E = 1/2\sum_k(y_k - t_k)^2 \\
+y_k:신경망이\ 추측한\ 값 \\
+t_k:정답(0\ or\ 1)
+$$
 
 계산이 간편하여 가장 많이 사용되는 손실 함수이다. 위의 식에서는 1/2를 곱하는 것으로 되어 있으나 실제로는 2가 아닌 전체 데이터의 수를 나누어 1/n을 곱해주어야 한다.
 
@@ -39,7 +38,7 @@ comments: true
 
 
 
-2. ## 교차 엔트로피 오차(Cross Entropy Error: CEE) ##
+#### 교차 엔트로피 오차(Cross Entropy Error: CEE)
 
 $$
 E=-\sum_kt_klny_k
