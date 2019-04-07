@@ -36,7 +36,7 @@ nav:
     - '/'
     # - { Categories All: '/blog/categories/' }
     - { 실전프로젝트: '/blog/categories/#실전프로젝트'}
-    - { DataBase: '/blog/categories/#DataBase' }
+    - { Database: '/blog/categories/#Database' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
