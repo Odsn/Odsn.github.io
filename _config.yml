@@ -1,7 +1,7 @@
 # Site Info
 title: '김용주의 블로그'
 tagline: '김용주님의 블로그'
-description: '공부하면서 배운 것을 기록하는 곳'
+description: '맨땅에 헤딩하는 블로그입니다'
 baseurl: ""
 url: https://odsn.github.io
 
@@ -22,11 +22,11 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: KIM YONGJOO
-  description: Odsn(KIM YONGJOO)
+  name: YONGJOO KIM
+  description: 김용주
   contact:
     github:    https://github.com/odsn
-    # email:    mailto:siwabada@gmail.com
+    email:    21500121@handong.edu
 
 # Navigation (2nd level links supported)
 nav:
