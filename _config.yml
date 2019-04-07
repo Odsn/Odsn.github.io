@@ -4,7 +4,6 @@ tagline: '김용주님의 블로그'
 description: '공부하면서 배운 것을 기록하는 곳'
 baseurl: ""
 url: https://odsn.github.io
-logo: '/public/logo.png'
 
 # Site configurations
 gems: [jekyll-paginate]
@@ -26,11 +25,7 @@ author:
   name: KIM YONGJOO
   description: Odsn(KIM YONGJOO)
   contact:
-    # linkedin:  https://www.linkedin.com/in/lizhihao
     github:    https://github.com/odsn
-    # facebook:  https://www.facebook.com/wayhome25
-    # twitter:   https://twitter.com/Li_Zhihao
-    # weibo:     http://weibo.com/41173780
     # email:    mailto:siwabada@gmail.com
 
 # Navigation (2nd level links supported)
@@ -42,17 +37,6 @@ nav:
     # - { Categories All: '/blog/categories/' }
     - { 실전프로젝트: '/blog/categories/#실전프로젝트'}
     - { DataBase: '/blog/categories/#DataBase' }
-    # - { TIL (Today I Learned): '/blog/categories/#til' }
-    # - { 컴퓨터공학 : '/blog/categories/#컴퓨터공학' }
-    # - { Django: '/blog/categories/#django' }
-    # - { python: '/blog/categories/#python' }
-    # - { javascript: '/blog/categories/#javascript' }
-    # - { nodejs: '/blog/categories/#nodejs' }
-    # - { MySQL: '/blog/categories/#MySQL' }
-    # - { 알고리즘 문제풀이: '/blog/categories/#알고리즘-문제풀이' }
-    # - { git: '/blog/categories/#git' }
-    # - { firebase: '/blog/categories/#firebase' }
-    - { etc: '/blog/categories/#etc' }
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
@@ -65,7 +49,7 @@ category_page: '/blog/categories/'
 
 # Puglins
 mathjax: true # whether support mathjax
-google_analytics_token: 'UA-92094009-1' # leave blank if you don't want google analytics
+google_analytics_token: '' # leave blank if you don't want google analytics
 disqus_short_name: 'odsn-github-io' # leave blank if you don't want disqus
 
 
