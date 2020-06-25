@@ -6,7 +6,7 @@ category: BLoC
 permalink: /BLoC/:year/:month/:day/:title/
 ---
 
-### Counter
+# Tutorial: Counter
 
 +버튼을 누르면 1이 증가하고 -버튼을 누르면 1이 감소하는 간단한 어플이다. 코드에 대한 설명은 주석 참고.
 

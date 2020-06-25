@@ -6,6 +6,8 @@ category: BLoC
 permalink: /BLoC/:year/:month/:day/:title/
 ---
 
+# Architecture of BLoC
+
 
 
 ![Bloc Architecture](https://bloclibrary.dev/assets/bloc_architecture.png)

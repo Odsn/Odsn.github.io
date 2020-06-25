@@ -6,7 +6,7 @@ category: BLoC
 permalink: /BLoC/:year/:month/:day/:title/
 ---
 
-## This is BLoC
+# This is BLoC
 
 ### Getting Started
 

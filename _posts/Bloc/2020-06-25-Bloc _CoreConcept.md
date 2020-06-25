@@ -6,7 +6,9 @@ category: BLoC
 permalink: /BLoC/:year/:month/:day/:title/
 ---
 
-### Core Concepts of Bloc
+# Core Concepts of Bloc
+
+
 
 Bloc의 사용을 위해 꼭 알아야 할 것들은 다음과 같다.
 
@@ -121,7 +123,7 @@ Bloc을 쓰면 한 곳에서 모든 transition에 접근이 가능하다.
 
 event나 error나 transition이 일어났을 때 여러 Bloc들이 모두 같은 행동을 한다면 그걸 하나로 모아서 관리하는 것이다.
 
-### Core concept of flutter_bloc
+## Core concept of flutter_bloc
 
 #### Bloc Widgets
 
