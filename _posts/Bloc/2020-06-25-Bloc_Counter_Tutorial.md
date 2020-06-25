@@ -6,7 +6,7 @@ category: BLoC
 permalink: /BLoC/:year/:month/:day/:title/
 ---
 
-### Tutorial - Counter
+### Main.dart
 
 ```dart
 import 'package:flutter/material.dart';
@@ -53,10 +53,12 @@ class CounterBloc extends Bloc<CounterEvent, int> {
 class CounterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // BlocProvider로 Bloc생성
     final CounterBloc counterBloc = BlocProvider.of<CounterBloc>(context);
 
     return Scaffold(
       appBar: AppBar(title: Text('Counter')),
+      // CounterBloc의 state인 count에 따라 표시될 text가 달라질 것.
       body: BlocBuilder<CounterBloc, int>(
         builder: (context, count) {
           return Center(
@@ -76,6 +78,7 @@ class CounterPage extends StatelessWidget {
             child: FloatingActionButton(
               child: Icon(Icons.add),
               onPressed: () {
+                // Event 발생. 처리는 CounterBloc의 mapEventToState에서!
                 counterBloc.add(CounterEvent.increment);
               },
             ),
@@ -85,6 +88,7 @@ class CounterPage extends StatelessWidget {
             child: FloatingActionButton(
               child: Icon(Icons.remove),
               onPressed: () {
+                // Event 발생. 처리는 CounterBloc의 mapEventToState에서!
                 counterBloc.add(CounterEvent.decrement);
               },
             ),

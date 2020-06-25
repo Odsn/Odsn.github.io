@@ -85,6 +85,17 @@ class CounterBloc extends Bloc<CounterEvent, int> {
 
 add method를 통해 event가 생기고 `mapEventToState`가 실행됨.
 
+```dart
+void main() {
+    CounterBloc bloc = CounterBloc();
+
+    for (int i = 0; i < 3; i++) {
+        bloc.add(CounterEvent.increment);
+    }
+}
+
+```
+
 state가 변하는 transition을 관리하려면 먼저 `onTransition` method를 override시켜야 한다. `onTransition`은 모든 local Bloc을 관리할 수 있고, Bloc의 state가 update되기 직전에 call된다.
 
 그리고 `onError`를 사용하면 exception도 관리가 가능하다. 
@@ -108,9 +119,7 @@ void onError(Object error, StackTrace stackTrace) {
 
 Bloc을 쓰면 한 곳에서 모든 transition에 접근이 가능하다.
 
-이건 뭔소린지 모르겠는데 나에게 이것은 한동안 쓸 일이 없을 것 같다.
-
-
+event나 error나 transition이 일어났을 때 여러 Bloc들이 모두 같은 행동을 한다면 그걸 하나로 모아서 관리하는 것이다.
 
 ### Core concept of flutter_bloc
 
@@ -322,6 +331,8 @@ bloc에서 UI의 rebuild와 state change로 인해서 reaction이 실행될 때 
 BlocConsumer<BlocA, BlocAState>(
   listener: (context, state) {
     // do stuff here based on BlocA's state
+    // stuff는 state가 변했다는 것을 navigation처럼 알려주는 역할을 하면 된다.
+    // 보통은 snackbar나 dialog등을 사용
   },
   builder: (context, state) {
     // return widget here based on BlocA's state
