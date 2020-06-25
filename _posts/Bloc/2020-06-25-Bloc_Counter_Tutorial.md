@@ -6,127 +6,23 @@ category: BLoC
 permalink: /BLoC/:year/:month/:day/:title/
 ---
 
-## BLoC
-
-------------
-
-### What is Bloc?
+## What is BLoC?
 
 Bloc은 UI와 Logic을 따로 분리해서 사용하는 기법으로 효율적으로 개발할 수 있게 도와준다.
 
-Bloc은 다음과 같은 3가지 특징이 있다.
+개발자는 보통 어플이 어떤 방식으로 돌아가고 있고 잘 돌아가는지 알고 싶어하고, 최대한 효율적으로 관리하고 싶어 한다.
+
+Bloc에 있는 다음과 같은 3가지 특징들은 개발자에게 큰 도움이 된다.
 
 - Simple: 이해하기 쉽고 사용도 어렵지 않음
 - Powerful: 복잡한 어플을 더 작은 components들로 쪼개서 관리할 수 있게 해줌
 - Testable: 어플의 모든 부분을 쉽게 테스트 가능
 
-### Core Concepts of Bloc
-
-Bloc의 사용을 위해 꼭 알아야 할 것들은 다음과 같다.
-
-#### Events
-
-Bloc의 input이다. 버튼을 눌렀다거나 페이지가 로드된다거나 등의 사건이 일어나는 것을 말한다.
-
-#### States
-
-Bloc의 output이다. 어플의 현재 상태를 나타낸다.
-
-#### Transitions
-
-현재 state가 A라는 event를 만났을 때, 어떤 state로 변하게 되는데 이 변화를 transition이라고 한다.
-
-#### Streams
-
-Stream은 asynchronous data들을 모아둔 pipe라고 생각하면 된다. Asynchronous data들은 물이라고 생각하고 pipe에 물이 흐르고 있는 것을 생각하면 접근이 쉬워진다.
-
-Stream을 생성할 때는 async*로 생성할 수 있다.
-
-```dart
-Stream<int> countStream(int max) async* {
-    for (int i = 0; i < max; i++) {
-        yield i;
-    }
-}
-```
-
-`yield`는 stream으로 data를 넣는 keyword이다. 위 함수는 0~max-1까지 stream에 data를 넣는 작업을 하고 있다.
+이런이런 어서 빨리 Bloc을 써봐야 겠는걸?
 
 
 
-Stream을 다룰 때에는 Future, async, await으로 다룰 수 있다. 지금 당장이 아닌 미래에 값이 들어올 것이기 때문이다.
 
-```dart
-Future<int> sumStream(Stream<int> stream) async {
-    int sum = 0;
-    await for (int value in stream) {
-        sum += value;
-    }
-    return sum;
-}
-```
-
-Stream에 있는 data들을 모두 받아서 sum에다가 더하고 이를 반환하는 함수이다.
-
-#### Blocs
-
-Business Logic Component의 약자로 events를 states로 바꾸는 역할을 한다.
-
-모든 bloc은 아무런 event가 일어나지 않은 `inital state`를 만들어 줘야 하고, event가 들어오면 state를 반환하는 `mapEventToState`도 만들어 줘야 한다.
-
-```dart
-import 'package:bloc/bloc.dart';
-
-enum CounterEvent { increment, decrement }
-
-class CounterBloc extends Bloc<CounterEvent, int> {
-  @override
-  int get initialState => 0;
-
-  @override
-  Stream<int> mapEventToState(CounterEvent event) async* {
-    switch (event) {
-      case CounterEvent.decrement:
-        yield state - 1;
-        break;
-      case CounterEvent.increment:
-        yield state + 1;
-        break;
-    }
-  }
-}
-```
-
-add method를 통해 event가 생기고 mapEventToState가 실행됨.
-
-state가 변하는 transition을 관리하려면 먼저 `onTransition` method를 override시켜야 한다. `onTransition`은 모든 local Bloc을 관리할 수 있고, Bloc의 state가 update되기 직전에 call된다.
-
-그리고 `onError`를 사용하면 exception도 관리가 가능하다. 
-
-```dart
-@override
-void onTransition(Transition<CounterEvent, int> transition) {
-    print(transition);
-    super.onTransition(transition);
-}
-
-@override
-void onError(Object error, StackTrace stackTrace) {
-  print('$error, $stackTrace');
-}
-```
-
-
-
-#### BlocDelegate
-
-Bloc을 쓰면 한 곳에서 모든 transition에 접근이 가능하다.
-
-이건 뭔소린지 모르겠으니 튜토리얼 통해 알아봐야겠다.
-
-
-
-### Core concept of flutter_bloc
 
 
 
