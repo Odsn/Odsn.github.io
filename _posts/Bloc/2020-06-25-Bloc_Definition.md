@@ -8,7 +8,7 @@ permalink: /BLoC/:year/:month/:day/:title/
 
 # This is BLoC
 
-### Getting Started
+## Getting Started
 
 BLoC에 대해 알아보기 전에 준비해야 할 것.
 
@@ -45,7 +45,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 
 
-### Why BLoC?
+## Why BLoC?
 
 #### BLoC(Business Logic Component)
 
