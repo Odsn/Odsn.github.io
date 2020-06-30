@@ -28,7 +28,7 @@ onPressed나 Network에서 뭐를 future로 가져오는 것도 모두 하나의
 
 
 
-영상: https://www.youtube.com/watch?v=vl_AaCgudcY&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=14
+영상: [Isolates and Event loops](https://www.youtube.com/watch?v=vl_AaCgudcY&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=14)
 
 ### Future
 
@@ -91,7 +91,7 @@ void main(){
 }
 ```
 
-영상: https://www.youtube.com/watch?v=OTS-ap9_aXc&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=15
+영상: [Dart Future](https://www.youtube.com/watch?v=OTS-ap9_aXc&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=15)
 
 
 
@@ -155,7 +155,7 @@ class NumberCreator{
 }
 ```
 
-영상: https://www.youtube.com/watch?v=nQBpOIHE4eE&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=16
+영상: [Dart Stream](https://www.youtube.com/watch?v=nQBpOIHE4eE&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=16)
 
 
 
@@ -237,7 +237,7 @@ class ProcessedData {
 }
 ```
 
-영상: https://www.youtube.com/watch?v=SmTCmDMi4BY&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=17
+영상: [Async/Await](https://www.youtube.com/watch?v=SmTCmDMi4BY&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=17)
 
 
 
@@ -350,4 +350,5 @@ void main() {
 
 ```
 
-영상: https://www.youtube.com/watch?v=TF-TBsgIErY&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=18
+영상: [Generator Function](https://www.youtube.com/watch?v=TF-TBsgIErY&list=PLjxrf2q8roU2HdJQDjJzOeO6J3FoFLWr2&index=18)
+

@@ -65,6 +65,6 @@ Bloc에 있는 다음과 같은 3가지 특징들은 개발자에게 큰 도움�
 
 이 글은 아래의 글을 참고하여 작성되었습니다.
 
-https://bloclibrary.dev/#/gettingstarted
+[Getting Started](https://bloclibrary.dev/#/gettingstarted)
 
-https://bloclibrary.dev/#/whybloc
+[Why Bloc?](https://bloclibrary.dev/#/whybloc)

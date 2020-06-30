@@ -513,6 +513,6 @@ Presentation layer와 Business Logic layer를 위와 같이 분리해서 다룰 
 
 이 글은 아래의 글을 참고하여 작성되었습니다.
 
-https://bloclibrary.dev/#/coreconcepts
+[Core Concepts of bloc](https://bloclibrary.dev/#/coreconcepts)
 
-https://bloclibrary.dev/#/flutterbloccoreconcepts
+[Core Concepts of flutter_bloc](https://bloclibrary.dev/#/flutterbloccoreconcepts)

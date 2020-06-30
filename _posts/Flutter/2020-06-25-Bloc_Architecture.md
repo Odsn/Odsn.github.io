@@ -58,4 +58,4 @@ Bloc state에 따라 screen을 render함.
 
 이 글은 아래의 글을 참고하여 작성되었습니다.
 
-https://bloclibrary.dev/#/architecture
+[Architecture of bloc](https://bloclibrary.dev/#/architecture)

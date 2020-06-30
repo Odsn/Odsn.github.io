@@ -105,4 +105,6 @@ class CounterPage extends StatelessWidget {
 
 ```
 
+이 글은 아래의 글을 참고하여 작성되었습니다.
 
+[Counter Tutorial Using Bloc](https://bloclibrary.dev/#/fluttercountertutorial)
