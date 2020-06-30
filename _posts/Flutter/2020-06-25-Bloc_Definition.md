@@ -2,8 +2,8 @@
 layout: post
 title: What is Bloc?
 published: True
-category: BLoC
-permalink: /BLoC/:year/:month/:day/:title/
+category: Flutter
+permalink: /Flutter/:year/:month/:day/:title/
 ---
 
 # This is BLoC

@@ -2,8 +2,8 @@
 layout: post
 title: Simple Tutorial - Counter
 published: True
-category: BLoC
-permalink: /BLoC/:year/:month/:day/:title/
+category: Flutter
+permalink: /Flutter/:year/:month/:day/:title/
 ---
 
 # Tutorial: Counter

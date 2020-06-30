@@ -2,8 +2,8 @@
 layout: post
 title: Architecture of BLoC
 published: True
-category: BLoC
-permalink: /BLoC/:year/:month/:day/:title/
+category: Flutter
+permalink: /Flutter/:year/:month/:day/:title/
 ---
 
 # Architecture of BLoC

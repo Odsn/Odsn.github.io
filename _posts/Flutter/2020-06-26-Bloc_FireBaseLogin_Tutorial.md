@@ -2,8 +2,8 @@
 layout: post
 title: Simple Tutorial - Firebase Login
 published: True
-category: BLoC
-permalink: /BLoC/:year/:month/:day/:title/
+category: Flutter
+permalink: /Flutter/:year/:month/:day/:title/
 ---
 
 # Tutorial: Firebase Login
