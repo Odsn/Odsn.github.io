@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple Tutorial - Counter
+title: Simple BLoC Tutorial - Counter
 published: True
 category: Flutter
 permalink: /Flutter/:year/:month/:day/:title/

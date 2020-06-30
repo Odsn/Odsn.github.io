@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple Tutorial - Firebase Login
+title: Simple BLoC Tutorial - Firebase Login
 published: True
 category: Flutter
 permalink: /Flutter/:year/:month/:day/:title/
