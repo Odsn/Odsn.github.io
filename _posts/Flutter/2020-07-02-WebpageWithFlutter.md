@@ -22,6 +22,7 @@ flutter에는 android, ios 뿐만 아니라 web에도 동시에 적용이 가능
 
 <center> Mobile App </center>
 
-![image-20200702092231249](/Users/odsn/Library/Application Support/typora-user-images/image-20200702092231249.png)
+![image](https://user-images.githubusercontent.com/43085342/86303101-bf82b100-bc45-11ea-822d-d1d4ef037d2b.png)
 
 T H E E N D
+
