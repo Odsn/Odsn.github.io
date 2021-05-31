@@ -38,7 +38,7 @@ nav:
     - { S-lab: '/blog/categories/#S-lab'}
     - { Database: '/blog/categories/#Database' }
     - { Flutter: '/blog/categories/#Flutter' }
-    # - { Test: '/blog/categories/#Test'}
+     - { Problem Solve: '/blog/categories/#Problem Solve'}
     # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
